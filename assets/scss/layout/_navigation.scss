@@ -1,46 +1,10 @@
-.container{
-    margin-top: 30px;
-}
-.upper-navbar{
-   font-size: 40px;
-   display: flex;
-   justify-content: space-between;
-   padding-left: 350px;
-   padding-right: 350px;
-   padding-bottom: 25px;
-   a{
-    font-size: 20px;
-   }
-   .icons i{
-    font-size: 20px;
-    padding: 0 7px 0 7px;
-   }
-   .number{
-    display: flex;
-    align-items: center;
-    a{
-        padding-left: 15px;
-    }
-   }
-}
-.fa-magnifying-glass:hover{
-    color: #ABD373 !important;
-}
-.fa-heart:hover{
-    color: #ABD373 !important;
-}
-.fa-basket-shopping:hover{
-    color: #ABD373 !important;
-}
-.lower-navbar ul{
+.lower-navbar ul {
     display: flex;
     justify-content: center;
     gap: 35px;
     padding-top: 25px;
     border-top: 1px solid #dee2e6;
-    
-    
-    
-
-   
-}
+    li a:hover {
+      color: #abd373;
+    }
+  }

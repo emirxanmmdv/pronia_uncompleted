@@ -19,49 +19,93 @@ img {
   max-width: 100%;
 }
 
-.container {
-  margin-top: 30px;
-}
-
-.upper-navbar {
-  font-size: 40px;
-  display: flex;
-  justify-content: space-between;
-  padding-left: 350px;
-  padding-right: 350px;
-  padding-bottom: 25px;
-}
-.upper-navbar a {
-  font-size: 20px;
-}
-.upper-navbar .icons i {
-  font-size: 20px;
-  padding: 0 7px 0 7px;
-}
-.upper-navbar .number {
-  display: flex;
-  align-items: center;
-}
-.upper-navbar .number a {
-  padding-left: 15px;
-}
-
-.fa-magnifying-glass:hover {
-  color: #ABD373 !important;
-}
-
-.fa-heart:hover {
-  color: #ABD373 !important;
-}
-
-.fa-basket-shopping:hover {
-  color: #ABD373 !important;
-}
-
 .lower-navbar ul {
   display: flex;
   justify-content: center;
   gap: 35px;
   padding-top: 25px;
   border-top: 1px solid #dee2e6;
+}
+.lower-navbar ul li a:hover {
+  color: #abd373;
+}
+
+.left-top-header {
+  background-color: #abd373;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 350px;
+  padding-right: 350px;
+  height: 50px;
+}
+
+.buttons button {
+  background-color: #abd373;
+  border: none;
+  color: white;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  border: 1px solid white;
+  background-color: white;
+  top: 45px;
+  right: 70px;
+  width: 100px;
+  height: 50px;
+}
+
+.active {
+  display: block;
+}
+
+.upper-header {
+  font-size: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  padding-left: 350px;
+  padding-right: 350px;
+  padding-bottom: 25px;
+}
+.upper-header a {
+  font-size: 20px;
+}
+.upper-header .icons i {
+  font-size: 20px;
+  padding: 0 7px 0 7px;
+}
+.upper-header .number {
+  display: flex;
+  align-items: center;
+}
+.upper-header .number a {
+  padding-left: 15px;
+}
+
+#contact:hover {
+  color: #abd373;
+}
+
+.fa-magnifying-glass:hover {
+  color: #abd373 !important;
+}
+
+.fa-heart:hover {
+  color: #abd373 !important;
+}
+
+.fa-basket-shopping:hover {
+  color: #abd373 !important;
+}
+
+.footer-area {
+  background-image: url(https://htmldemo.net/pronia/pronia/assets/images/footer/bg/1-1920x465.jpg);
+  height: 600px;
 }/*# sourceMappingURL=main.css.map */
