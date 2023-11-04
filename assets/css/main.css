@@ -22,63 +22,48 @@ img {
 .lower-navbar ul {
   display: flex;
   justify-content: center;
-  gap: 35px;
-  padding-top: 25px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  gap: 30px;
   border-top: 1px solid #dee2e6;
 }
 .lower-navbar ul li a:hover {
-  color: #abd373;
+  color: #95ff00;
+}
+
+.top-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 35px;
+  font-size: 13px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 900px;
 }
 
 .left-top-header {
   background-color: #abd373;
   color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 350px;
-  padding-right: 350px;
-  height: 50px;
-}
-
-.buttons button {
-  background-color: #abd373;
-  border: none;
-  color: white;
-  font-size: 14px;
-  margin-left: 20px;
-}
-
-.submenu {
-  display: none;
-  position: absolute;
-  z-index: 100;
-  border: 1px solid white;
-  background-color: white;
-  top: 45px;
-  right: 70px;
-  width: 100px;
-  height: 50px;
-}
-
-.active {
-  display: block;
 }
 
 .upper-header {
-  font-size: 40px;
+  font-size: 25px;
+  margin-top: 25px;
+  padding-bottom: 17px;
+}
+.upper-header .upper-header-content {
   display: flex;
   justify-content: space-between;
-  margin-top: 25px;
-  padding-left: 350px;
-  padding-right: 350px;
-  padding-bottom: 25px;
+  align-items: center;
 }
 .upper-header a {
   font-size: 20px;
 }
 .upper-header .icons i {
-  font-size: 20px;
+  font-size: 15px;
   padding: 0 7px 0 7px;
 }
 .upper-header .number {
@@ -89,23 +74,94 @@ img {
   padding-left: 15px;
 }
 
-#contact:hover {
+.options li a {
+  font-size: 13px;
+  color: white;
+}
+.options ul {
+  display: flex;
+  column-gap: 15px;
+}
+.options ul li {
+  position: relative;
+}
+.options ul li .usd-subMenu {
+  display: none;
+  position: absolute;
+  top: 35px;
+  right: 0;
+  width: 80px;
+  height: 100px;
+}
+.options ul li .usd-subMenu ul {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+.options ul li li:hover div {
+  display: block;
+}
+.options ul li {
+  position: relative;
+  padding: 10px;
+}
+.options ul .lang-subMenu {
+  display: none;
+  position: absolute;
+  top: 35px;
+  right: 0;
+  width: 80px;
+  height: 100px;
+}
+.options ul .lang-subMenu ul {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0);
+}
+.options ul li:hover div {
+  display: block;
+}
+
+.active {
+  display: block;
+}
+
+.icons i {
+  color: #8b98a9;
+}
+.icons #contact:hover {
+  color: #abd373;
+}
+.icons .fa-magnifying-glass:hover {
+  color: #abd373;
+}
+.icons .fa-heart:hover {
+  color: #abd373;
+}
+.icons .fa-basket-shopping:hover {
   color: #abd373;
 }
 
-.fa-magnifying-glass:hover {
-  color: #abd373 !important;
+.slider-section {
+  padding-top: 17px;
+  background-image: url(https://htmldemo.net/pronia/pronia/assets/images/slider/bg/1-1.jpg);
 }
-
-.fa-heart:hover {
-  color: #abd373 !important;
+.slider-section .slider-content {
+  display: flex;
+  justify-content: space-between;
 }
-
-.fa-basket-shopping:hover {
-  color: #abd373 !important;
+.slider-section .slider-content .left-main-header {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
-.footer-area {
-  background-image: url(https://htmldemo.net/pronia/pronia/assets/images/footer/bg/1-1920x465.jpg);
-  height: 600px;
+.slider-section .slider-content .left-main-header span {
+  font-size: 47px;
+}
+.slider-section .slider-content .left-main-header h2 {
+  font-size: 70px;
+}
+.slider-section .slider-content .right-main-content {
+  width: 50%;
 }/*# sourceMappingURL=main.css.map */
