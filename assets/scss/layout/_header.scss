@@ -1,137 +1,413 @@
-.top-header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 35px;
-  font-size: 13px;
-}
-.container{
+.container {
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 1200px;
 }
-.left-top-header{
-    background-color: #abd373;
-    color: white;
+
+.left-top-header {
+  background-color: #abd373;
+  color: white;
+  .top-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    font-size: 13px;
+    .options {
+      ul {
+        display: flex;
+        column-gap: 10px;
+      }
+      li a {
+        font-size: 13px;
+        color: white;
+      }
+    }
+  }
 }
 .upper-header {
   font-size: 25px;
   margin-top: 25px;
   padding-bottom: 17px;
-  .upper-header-content{
+  .upper-header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  a {
-    font-size: 20px;
-  }
-  .icons i {
-    font-size: 15px;
-    padding: 0 7px 0 7px;
-  }
-  .number {
-    display: flex;
-    align-items: center;
-    a {
-      padding-left: 15px;
+    .number {
+      display: flex;
+      align-items: center;
+      a {
+        padding-left: 15px;
+      }
+    }
+    .icons {
+      i {
+        color: #8b98a9;
+        font-size: 18px;
+        padding: 0 7px 0 7px;
+      }
+      .fa-magnifying-glass:hover {
+        color: #abd373;
+      }
+      .fa-heart:hover {
+        color: #abd373;
+      }
+      .fa-basket-shopping:hover {
+        color: #abd373;
+      }
     }
   }
 }
-.options{
-  li a{
-    font-size: 13px;
-    color: white;
-  }
-  ul{
- display: flex;
- column-gap: 15px;
- li{
-   position: relative;
-   .usd-subMenu{
-     display: none;
-     position: absolute;
-     top: 35px;
-     right: 0;
-     width: 80px;
-     height: 100px;
-     ul{
-       display: flex;
-       flex-direction: column;
-       background-color: black;
-     }
-   }
-   li:hover div{
-     display: block;
-   }
- }
-   li{
-     position: relative;
-     padding: 10px;
-   }
-   .lang-subMenu{
-     display: none;
-     position: absolute;
-     top: 35px;
-     right: 0;
-     width: 80px;
-     height: 100px;
-     ul{
-       display: flex;
-       flex-direction: column;
-       background-color: rgb(0, 0, 0);
-     }  
-   }
-   li:hover div{
-     display: block;
-   }
-}
-}
-.active{
- display: block;
-}
-.icons{
-  i{
-    color: #8b98a9;
-  }
-  #contact:hover {
+#contact:hover {
   color: #abd373;
 }
-.fa-magnifying-glass:hover {
-  color: #abd373
-}
-.fa-heart:hover {
-  color: #abd373;
-}
-.fa-basket-shopping:hover {
-  color: #abd373;
-}
-}
-
-.slider-section{
+.slider-section {
   padding-top: 17px;
   background-image: url(https://htmldemo.net/pronia/pronia/assets/images/slider/bg/1-1.jpg);
-  .slider-content{
+  .slider-content {
     display: flex;
     justify-content: space-between;
-    .left-main-header{
-      width: 50%;
+    .left-main-header {
+      max-width: 50%;
       display: flex;
       flex-direction: column;
       justify-content: center;
-
-      span{
-        font-size: 47px;
+      span {
+        font-size: 57px;
       }
-      h2{
+      h2 {
         font-size: 70px;
-
+      }
+      p {
+        font-size: 20px;
+      }
+      .slider-btn {
+        border: none;
+        margin-top: 50px;
+        background-color: #abd373;
+        color: white;
+        border-radius: 50px;
+        font-size: 16px;
+        width: 250px;
+        padding: 30px 45px;
       }
     }
-    .right-main-content{
-      width: 50%;
+    .right-main-header {
+      max-width: 50%;
     }
-    
-
   }
 }
 
+.shipping-section {
+  padding-top: 100px;
+  .shipping-cards {
+    display: flex;
+    justify-content: space-between;
+    .shipping-card {
+      display: flex;
+      align-items: center;
+      border: 1px dashed #abd373;
+      border-radius: 5px;
+      padding: 20px 35px;
+      gap: 20px;
+      .shipping-img {
+        padding-right: 30px;
+      }
+      .shipping-content {
+        .title {
+          font-size: 20px;
+          margin-bottom: 5px;
+        }
+        .desc {
+          color: #3e3e3f;
+        }
+      }
+    }
+  }
+}
+.products-section {
+  padding-top: 100px;
+  .products-title {
+    display: flex;
+    h2 {
+      color: #3e3e3f;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 40px;
+      margin: 0 auto;
+    }
+  }
+  .product-buttons {
+    padding-top: 60px;
+    padding-bottom: 55px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    .product-button {
+      border: 1px solid #dee2e6;
+      font-size: 18px;
+      padding: 10px 25px 10px 25px;
+      transition: 0.5s;
+      a {
+        color: #3e3e3f;
+      }
+    }
+    .product-button:hover {
+      border: 1px dashed #abd373;
+      a {
+        color: #abd373;
+      }
+    }
+  }
+  .product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    .product-card {
+      .product-content {
+        padding-top: 10px;
+        .product-name {
+          font-size: 18px;
+        }
+        .product-name:hover {
+          color: #abd373;
+        }
+        .price {
+          color: #abd373;
+          font-size: 20px;
+          padding: 8px 0;
+        }
+      }
+      .card-feedback {
+        display: flex;
+        gap: 10px;
+      }
+    }
+  }
+}
+.banner-section {
+  padding-top: 90px;
+  .banner-boxes {
+    margin-left: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    .upper-boxes {
+      display: flex;
+      justify-content: space-between;
+    }
+    .lower-boxes {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    .banner-box {
+      position: relative;
+      .banner-contents {
+        position: absolute;
+        top: 50px;
+        left: 70px;
+        column-gap: 20px;
+        text-align: center;
+        h3 {
+          color: #2d2d2d;
+          font-size: 36px;
+          margin-bottom: 45px;
+          margin-top: 20px;
+          text-align: start;
+          font-weight: 700;
+        }
+        a {
+          color: white;
+          background-color: #abd373;
+          font-size: 16px;
+          border-radius: 23.5px;
+          padding: 15px 35px;
+          transition: 0.5s;
+        }
+        a:hover {
+          background-color: #525252;
+        }
+      }
+      .text-position-left {
+        text-align: start;
+      }
+      .text-position-center {
+        text-align: center;
+        left: 29%;
+        margin-bottom: 20px;
+        h3 {
+          margin-bottom: 20px;
+          margin-top: 8px !important;
+        }
+      }
+    }
+  }
+}
+.newproducts-section {
+  padding-top: 100px;
+  .newproducts-title-contents {
+    text-align: center;
+    .newproducts-title {
+      .title {
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        color: #393939;
+        font-size: 40px;
+        font-weight: 900;
+      }
+    }
+    .newproducts-desc {
+      margin-bottom: 55px;
+    }
+  }
+  .newproducts-cards {
+    display: flex;
+    gap: 70px;
+    .newproducts-card {
+      .newproducts-contents {
+        .newproducts-name {
+          color: #303030;
+          font-size: 18px;
+        }
+        .price {
+          color: #abd373;
+          font-size: 20px;
+          padding: 8px 0;
+        }
+        .newproducts-feedback {
+          display: flex;
+          gap: 10px;
+        }
+      }
+    }
+  }
+}
+.comments-section {
+  padding-top: 200px;
+  background-image: url("https://htmldemo.net/pronia/pronia/assets/images/testimonial/bg/1-1-1820x443.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  .comments-title-contents {
+    text-align: center;
+    margin-top: 30px;
+    .comments-title {
+      color: #393939;
+      font-size: 26px;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+  }
+  .comments-cards {
+    display: flex;
+    padding-top: 50px;
+    .comments-card {
+      width: 370px;
+      padding: 40px 50px;
+      border-radius: 10px;
+      margin-right: 30px;
+      position: relative;
+      background-color: white;
+      .comments-icon {
+        background-color: #abd373;
+        position: absolute;
+        width: 115px;
+        height: 100px;
+        text-align: center;
+        top: 0;
+        right: 0;
+        border-bottom-left-radius: 100%;
+        color: white;
+        font-size: 35px;
+        transition: 0.5s;
+        i {
+          position: absolute;
+          left: 45px;
+          top: 25px;
+        }
+      }
+
+      .comments-icon:hover {
+        background-color: #525252;
+      }
+      .comments-img {
+        padding-bottom: 20px;
+      }
+      .comments-contents {
+        color: #434343;
+        .commentor-name {
+          padding-bottom: 10px;
+        }
+        .commentor-status {
+          padding-bottom: 20px;
+        }
+        .the-comment {
+          font-style: italic;
+        }
+      }
+    }
+  }
+}
+.brand-section {
+  padding-top: 100px;
+  .brand-bg {
+    background-image: url("https://htmldemo.net/pronia/pronia/assets/images/brand/bg/1-1170x300.jpg");
+    border-radius: 10px;
+    padding: 90px;
+    .brand-imgs {
+      display: flex;
+      justify-content: space-between;
+      .brand-img {
+        opacity: 0.5;
+        cursor: pointer;
+      }
+    }
+    .brand-img:hover {
+      opacity: 100%;
+    }
+  }
+}
+.blog-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  .blog-title-contents {
+    text-align: center;
+
+    .blog-title {
+      color: #393939;
+      font-size: 26px;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+    // .blog-desc {
+    // }
+  }
+  .blog-cards {
+    padding-top: 80px;
+    .blog-card {
+      width: 375px;
+      margin-right: 30px;
+      background-color: #f6f7fb;
+      border: 1px solid black;
+      border-radius: 10px;
+      padding: 35px 30px 40px 30px;
+
+      .blog-contents {
+        .blog-info {
+          padding-bottom: 10px;
+          .blog-meta {
+            display: flex;
+            // .author {
+            // }
+          //   .date {
+          // }
+          }
+
+          
+          // .card-title {
+          // }
+          // .card-desc {
+          // }
+        }
+      }
+    }
+  }
+}
