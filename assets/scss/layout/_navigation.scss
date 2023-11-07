@@ -1,12 +1,16 @@
 .lower-navbar ul {
-    display: flex;
-    justify-content: center;
-    padding-top: 17px;
-    padding-bottom: 17px;
-    gap: 30px;
-    border-top: 1px solid #dee2e6;
-    li a:hover {
-      color: #95ff00;
+  display: flex;
+  justify-content: center;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  gap: 30px;
+  border-top: 1px solid #dee2e6;
+  li a:hover {
+    color: #95ff00;
+  }
+  li{
+    .dropdown{
+      display: none;
     }
   }
-  
+}

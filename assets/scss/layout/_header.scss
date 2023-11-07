@@ -2,6 +2,61 @@
   margin: 0 auto;
   max-width: 1200px;
 }
+// .overlay{
+//   position: fixed;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   z-index: -1;
+//   background-color: rgba(0,0,0,0.3);
+// }
+.search-content {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  flex-direction: column;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  h1 {
+    color: white;
+    padding-bottom: 25px;
+    font-size: 20px;
+    word-spacing: 5px;
+    font-weight: 300;
+  }
+  .searchbar {
+    text-align: center;
+    padding: 30px 0;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid white;
+    color: white;
+    width: 500px;
+    font-size: 30px;
+    &::placeholder {
+      color: white;
+    }
+  }
+  .Xbtn {
+    color: black;
+    position: absolute;
+    font-size: 50px;
+    top: 0;
+    right: 15px;
+    transition: 0.5s;
+  }
+  .Xbtn:hover {
+    transform: rotate(180deg);
+  }
+}
 
 .left-top-header {
   background-color: #abd373;
@@ -300,6 +355,7 @@
     display: flex;
     padding-top: 50px;
     .comments-card {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       width: 370px;
       padding: 40px 50px;
       border-radius: 10px;
@@ -382,30 +438,43 @@
   }
   .blog-cards {
     padding-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     .blog-card {
-      width: 375px;
-      margin-right: 30px;
+      // width: 375px;
+      // margin-right: 70px;
       background-color: #f6f7fb;
-      border: 1px solid black;
-      border-radius: 10px;
       padding: 35px 30px 40px 30px;
-
+      border-radius: 10px;
       .blog-contents {
-        .blog-info {
-          padding-bottom: 10px;
-          .blog-meta {
-            display: flex;
-            // .author {
-            // }
-          //   .date {
-          // }
-          }
-
+        a {
+          color: #abd373;
+          font-size: 16px;
+        }
+        .blog-meta {
           
-          // .card-title {
-          // }
-          // .card-desc {
-          // }
+          .blog-meta-contents {
+           padding-bottom: 20px;
+            display: flex;
+            gap: 15px;
+            font-size: 16px;
+          }
+        }
+        .card-title {
+          .title {
+            color: #525252;
+            font-size: 22px;
+            font-weight: 600;
+           
+          }
+        }
+        .card-desc {
+          padding-top: 20px;
+          padding-bottom: 20px;
+          .desc {
+            line-height: 30px;
+          }
         }
       }
     }
